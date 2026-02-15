@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #8b0000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.slot-machine {
+    background: #111;
+    border: 8px solid gold;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 30px gold;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    color: gold;
+    text-shadow: 0 0 10px red;
+}
+
+.reels {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.reel {
+    background: white;
+    color: black;
+    font-size: 50px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: red;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: gray;
+}
+
+.jackpot {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px yellow; }
+    to { box-shadow: 0 0 30px gold; }
+}
