@@ -12,7 +12,7 @@ const spinSound = document.getElementById("spinSound");
 const jackpotSound = document.getElementById("jackpotSound");
 const buttonSound = document.getElementById("buttonSound");
 
-const loseSound = new Audio("sounds/lose.mp3");
+const loseSound = new Audio("sounds/lose.mp4");
 
 const emojis = ["🍒","🍋","🔔","💎","⭐","💰","7"];
 
